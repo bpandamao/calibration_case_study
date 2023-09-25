@@ -2,7 +2,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-from LISA_utils import FFT, waveform
+from utils import FFT, waveform
 
 def llike(data_f, signal_f, variance_noise_f):
     """
