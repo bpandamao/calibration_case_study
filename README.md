@@ -21,8 +21,8 @@ We treat $\dot{f}$ as an unknown parameter and set the rest at the default value
 | $a$ | $5\cdot 10^{-21}$  |-|-|
 | $f$ | $10^{-3}$  | -|-|
 
-### The steps are as follows:
-1. Problem: Realised operational coverage estimation
-2. Model: Operational coverage estimator
-3. Application: Calibration curve
-4. Result: Calibrated credible set
+**The steps are as follows: **
+#### Problem: Realised operational coverage estimation
+#### Model: Operational coverage estimator
+#### Application: Calibration curve
+#### Result: Calibrated credible set
