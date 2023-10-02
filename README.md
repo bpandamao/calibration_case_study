@@ -3,10 +3,26 @@
 
 For the purpose of showing the calibration process of the Bayesian inference in gravitational wave astronomy.
 
-Here, we demonstrate the process of "correcting" the Bayesian credible interval for a 1d toy model in the paper[paper_link]. 
+Here, we demonstrate the process of "correcting" the Bayesian credible interval for a 1d toy model in the paper[paper_link]. Starting from the simulation for the training set, going through the training process, and testing the proposed model at the test signal d_{o} (the test signal is generated without noise), the calibrated region at a nominal level of 80% is obtained and displayed in the plot. The results differ slightly from the paper as different seed is used here.
 
-Starting from the simulation for the training set, going through the training process, and testing the proposed model at the test signal d_{o} (the test signal is generated without noise), the calibrated region at a nominal level of 80% is obtained and displayed in the plot. The results are slightly different from the paper as different seed is used here.
+We chose a toy model that describes a chirping waveform.
 
-```diff
-- still need to be modified...
+$h(t;a,f,\dot{f},\epsilon) = a \sin (2\pi t[f + \dot{f}t](1 - \epsilon))$
 
+Here $\epsilon \ll 1$ is used as a tuneable parameter allowing deviations from an exact model $h_{\text{e}}(t;\boldsymbol{\theta},\epsilon = 0)$ given by an approximate model $h_{\text{m}}(t;\boldsymbol{\theta}, \epsilon \neq 0)$. We only consider a single data stream and use the approximate Lisa-like PSD.
+
+Set $\epsilon = 10^{-6}$ as the approximate waveform model $h_{\text{m}}$ while $\epsilon = 0$ for the exact waveform model $h_{\text{e}}$.
+
+We treat $\dot{f}$ as an unknown parameter and set the rest at the default values. So, this is a 1d parameter inference problem.
+
+| parameter | default_value | prior_distribution | prior_range|
+|-----------|------------|--------------------|------------|
+| $\dot{f}$ | $10^{-8}$  | uniform|$10^{-13}$|
+| $a$ | $5\cdot 10^{-21}$  |-|-|
+| $f$ | $10^{-3}$  | -|-|
+
+### The steps are as follows:
+1. Problem: Realised operational coverage estimation
+2. Model: Operational coverage estimator
+3. Application: Calibration curve
+4. Result: Calibrated credible set
