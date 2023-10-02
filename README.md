@@ -20,9 +20,11 @@ We treat $\dot{f}$ as an unknown parameter and set the rest at the default value
 | $\dot{f}$ | $10^{-8}$  | uniform|$10^{-13}$|
 | $a$ | $5\cdot 10^{-21}$  |-|-|
 | $f$ | $10^{-3}$  | -|-|
+  
+**The steps are as follows:**
 
-**The steps are as follows: **
-#### Problem: Realised operational coverage estimation
-#### Model: Operational coverage estimator
-#### Application: Calibration curve
-#### Result: Calibrated credible set
+1. [Problem: Realised operational coverage estimation](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_realised_operational_coverage_estimation.ipynb)
+2. Model: Operational coverage estimator
+2.1 [sample simulation](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_operational_estimator_sample_simulation.ipynb)
+2.2 [model training](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_estimator_training%20and%20evaluation.ipynb)
+3. [Application: Calibration curve](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_calibration_curve_and_application.ipynb)
