@@ -20,11 +20,13 @@ We treat $\dot{f}$ as an unknown parameter and set the rest at the default value
 | $\dot{f}$ | $10^{-8}$  | uniform|$10^{-13}$|
 | $a$ | $5\cdot 10^{-21}$  |-|-|
 | $f$ | $10^{-3}$  | -|-|
-  
+
+## Code structure
 **The steps are as follows:**
+Run the notebook step by step. There will be data generated through the process.  
 
 1. [Realised operational coverage estimation](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_realised_operational_coverage_estimation.ipynb)  
-To estimate the operational coverage, we generate samples from approximate posterior and exact posterior distribution, and compute the ratio, which is not practical since the exact posterior distributions are unknown.  
+To estimate the operational coverage, we generate samples from the approximate posterior and exact posterior distribution and compute the ratio, which is not practical since the exact posterior distributions are unknown.  
 
 2. Operational coverage estimator  
 Without simulations from the exact posterior distribution, we apply a logistic regression to estimate the operational coverage and it is an unbiased estimator.   
@@ -33,3 +35,11 @@ Without simulations from the exact posterior distribution, we apply a logistic r
 
 3. [Calibration curve](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_calibration_curve_and_application.ipynb)  
 For a test signal, here $d_O$, a calibration curve could be established to output the "correct" nominal level from the desired nominal level.
+
+## Get started
+1. Install Anaconda if you do not have it.
+2. Create a virtual environment using:
+```
+conda create -n mcmc_tutorial -c conda-forge numpy scipy matplotlib corner tqdm jupyter tensorflow keras sklearn statsmodels pandas seaborn   
+conda activate mcmc_tutorial
+```
