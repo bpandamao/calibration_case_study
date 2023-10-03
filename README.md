@@ -25,11 +25,11 @@ We treat $\dot{f}$ as an unknown parameter and set the rest at the default value
 
 1. [Realised operational coverage estimation](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_realised_operational_coverage_estimation.ipynb) 
 Here, we define the operational coverage:
-$b(d_o)= P(\boldsymbol{\theta} \in \widetilde{C}_{d_o}) = \displaystyle\int \mathbbm{1}_{ \widetilde{C}_{d_o}}(\boldsymbol{\theta})p(\boldsymbol{\theta}|d_o) \text{d}\boldsymbol{\theta}$
+$b(d_o)= P(\boldsymbol{\theta} \in \widetilde{C}_{d_o}) = \displaystyle\int \unicode{x1D7D9}_{ \widetilde{C}_{d_o}}(\boldsymbol{\theta})p(\boldsymbol{\theta}|d_o) \text{d}\boldsymbol{\theta}$
 which might not be equal to the nominal level, when approximate likelihood are used. To estimate the operational coverage, we generate samples from approximate posterior and exact posterior distribution, and compute the ratio, which is not practical since the exact posterior distributions are unknown.  
 
 2. Operational coverage estimator
-Without simulations from the exact posterior distribution, we apply a logistic regression to estimate the operational coverage and it is an unbiased estimator. 
+Without simulations from the exact posterior distribution, we apply a logistic regression to estimate the operational coverage and it is an unbiased estimator.   
 2.1 [Sample preparation](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_operational_estimator_sample_simulation.ipynb)  
 2.2 [Dimension reduction and classifier training](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_estimator_training%20and%20evaluation.ipynb)  
 
