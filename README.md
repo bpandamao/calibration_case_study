@@ -34,7 +34,7 @@ Without simulations from the exact posterior distribution, we apply a logistic r
 2.2 [Dimension reduction and classifier training](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_estimator_training%20and%20evaluation.ipynb)  
 
 3. [Calibration curve](https://github.com/bpandamao/calibration_case_study/blob/main/1d_toy_model_calibration_curve_and_application.ipynb)  
-For a test signal, here $d_O$, a calibration curve could be established to output the "correct" nominal level from the desired nominal level.
+For a test signal, here $d_o$, a calibration curve could be established to output the "correct" nominal level from the desired nominal level.
 
 ## Get started
 1. Install Anaconda if you do not have it.
