@@ -40,6 +40,6 @@ For a test signal, here $d_o$, a calibration curve could be established to outpu
 1. Install Anaconda if you do not have it.
 2. Create a virtual environment using:
 ```
-conda create -n calibration_case_study -c conda-forge numpy scipy matplotlib corner tqdm jupyter tensorflow keras sklearn statsmodels pandas seaborn   
+conda create -n calibration_case_study -c conda-forge numpy scipy matplotlib corner tqdm jupyter tensorflow keras scikit-learn statsmodels pandas seaborn    
 conda activate calibration_case_study
 ```
