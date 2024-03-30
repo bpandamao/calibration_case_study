@@ -7,7 +7,7 @@ Here, we demonstrate the process of "correcting" the Bayesian credible interval 
 
 We chose a toy model that describes a chirping waveform.
 
-$h(t;a,f,\dot{f},\epsilon) = a \sin (2\pi t[f + \dot{f}t](1 - \epsilon))$
+$h(t;a,f,\dot{f},\epsilon) = a \sin (2\pi t[f + 0.5\dot{f}t](1 - \epsilon))$
 
 Here $\epsilon \ll 1$ is used as a tuneable parameter allowing deviations from an exact model $h_{\text{e}}(t;\boldsymbol{\theta},\epsilon = 0)$ given by an approximate model $h_{\text{m}}(t;\boldsymbol{\theta}, \epsilon \neq 0)$. We only consider a single data stream and use the approximate Lisa-like PSD.
 
